@@ -5,7 +5,12 @@
  *
  * @hint - Gunakan Destructing Object
  */
-const {index,store,update,destroy} = require ("./Controller/FruitController");
+const {
+  index,
+  store,
+  update,
+  destroy,
+} = require("./Controller/FruitController");
 /**
  * NOTES:
  * - Fungsi main tidak perlu diubah

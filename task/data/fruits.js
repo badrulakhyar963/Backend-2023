@@ -3,7 +3,7 @@
  * - Buat array yang berisi data buah.
  * - Refactor variable ke ES6 Variable.
  */
-const fruits = ["apel","mangga","melon","ceri","semangka"];
+const fruits = ["apel", "mangga", "melon", "ceri", "semangka"];
 
 // TODO 2: export variable fruits
 module.exports = fruits;

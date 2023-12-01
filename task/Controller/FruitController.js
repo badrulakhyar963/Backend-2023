@@ -14,9 +14,9 @@ const fruits = require("../data/fruits");
  * @hint - Gunakan looping for of
  */
 const index = () => {
-    for (const fruit of fruits) {
-        console.log(fruit);
-    }
+  for (const fruit of fruits) {
+    console.log(fruit);
+  }
 };
 /**
  * TODO 5:
@@ -29,7 +29,8 @@ const index = () => {
  * @hint - Gunakan method push
  */
 const store = (name) => {
-    fruits.push(name);
+  fruits.push(name);
+  index();
 };
 
 /**
@@ -42,12 +43,8 @@ const store = (name) => {
  * @param {string} name - Nama buah yang baru.
  */
 const update = (position, name) => {
-    if (fruits[position]) {
-        fruits[position] = name;
-        console.log('Data updated:', fruits);
-    } else {
-        console.log('Invalid position:', position);
-    }
+  fruits[position] = name;
+  index();
 };
 
 /**
@@ -61,12 +58,8 @@ const update = (position, name) => {
  * @hint - Gunakan method splice
  */
 const destroy = (position) => {
-    if (fruits[position]) {
-        fruits.splice(position, 1);
-        console.log('Data deleted:', fruits);
-    } else {
-        console.log('Invalid position:', position);
-    }
+  fruits.splice(position, 1);
+  index();
 };
 
 /**
